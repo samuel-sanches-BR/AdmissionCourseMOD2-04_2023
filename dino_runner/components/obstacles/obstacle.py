@@ -15,7 +15,6 @@ class Obstacle(Sprite):
         self.rect.x -= game_speed
 
         if self.rect.x < -self.rect.width:
-            print("chamou pop")
             obstacles.pop()
 
     def draw(self, screen):

@@ -8,11 +8,9 @@ from dino_runner.utils.constants import SMALL_CACTUS
 class ObstacleManager:
     def __init__(self):
         self.obstacles = []
-        print("lista vazia")
 
     def update(self, game):
         if len(self.obstacles) == 0:
-            print("dentro do if ")
             cactus_type = "SMALL" if random.randint(0,1) == 0 else "LARGE"
             self.obstacles.append(Cactus(cactus_type))
 
