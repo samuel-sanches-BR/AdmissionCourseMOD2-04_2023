@@ -29,6 +29,7 @@ class Dinosaur(Sprite):
         self.setup_state()
 
     def setup_state(self):
+        self.power_up_time = 0
         self.has_power_up = False
         self.shield = False
         self.show_text = False
